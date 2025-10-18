@@ -1,0 +1,21 @@
+UI    <------- AppProps
+   |                |
+   V                |
+  BLL   <-------    |
+   |                |
+   V                |
+  DAL   <-------    |
+   ||
+   VV
+Database
+
+UI (yt_toturial_3tier) = presentation layer = front end
+bll = business logic layer = rules	(duplicate usernames, products price cant be 0), total price = quantity * price
+dal = data access layer	= works with database..... DbCon() class will be used in this layer.
+
+AppProps = properties = they are like a variable but they can be used to transfer data from 1 layer to another layer.
+
+References:
+UI = AppProps, Bll
+BLL = AppProps, DAL
+DAL = AppProps
