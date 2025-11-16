@@ -1,0 +1,2 @@
+Add-Migration InitialCreate  //you can write anything in place of InitialCreate
+Update-Database
