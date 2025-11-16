@@ -1,0 +1,12 @@
+@model mvc6.Models.AddProduct
+
+<h1>create page</h1>
+
+<form method="post" asp-action="Create">
+    <p>enter name = <input type ="text" asp-for="Name"/></p>
+    <p>enter description = <input type ="text" asp-for = "Description"/></p>
+    <p>enter price = <input type="text" asp-for = "Price"/></p>
+    <button type="submit">submit</button>
+</form>
+
+<a asp-action="Index" asp-controller="Product">index page</a>
