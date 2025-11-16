@@ -1,0 +1,11 @@
+@model List<mvc6.Models.Entities.Product>
+
+@foreach(var product in Model)
+{
+    <p>@product.Id</p>
+    <p>@product.Name</p>
+    <p>@product.Description</p>
+    <p>@product.Price</p>
+}
+
+<a asp-action="Create" asp-controller="Product">create page</a>
